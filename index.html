@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake And Ladder</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/dice.css">
+</head>
+<body>
+  <div class="start_area">
+    <h1>Welcome to the Game!</h1>
+    <p>Choose your game mode:</p>
+      <label class="game-mode-button active">
+        <input type="radio" name="gameMode" value="human" > Play with Human
+      </label>
+       <label class="game-mode-button">
+           <input type="radio" name="gameMode" value="computer"> Play vs Computer
+       </label>
+       <br/>
+      <button id="startButton" class="btn">Start Game</button>
+  </div>
+  <div id="game">
+      <div class="board-container">
+          <div class="board">
+              <img src="./public/snake2.png" class="snake snake_1" alt="Snake 1" />
+              <img src="./public/snake1.png" class="snake snake_2" alt="Snake 2" />
+              <img src="./public/snake3.png" class="snake snake_3" alt="Snake 3" />
+              <img src="./public/snake4.png" class="snake snake_4" alt="Snake 4" />
+              <img src="./public/left&right.png" class="snake ladder_1" alt="ladder_1" />
+              <img src="./public/left&right.png" class="snake ladder_2" alt="ladder_2" />
+              <img src="./public/ladder.png" class="snake ladder_3" alt="ladder_3" />
+              <img src="./public/ladder.png" class="snake ladder_4" alt="ladder_3" />
+              <span class="players player_1">P1</span>
+              <span class="players player_2">P2</span>
+          </div>
+      </div>
+      <div class="section_1">
+          <h3>Player 1</h3>
+      </div>
+      <div class="section_2">
+        <h3></h3>
+      </div>
+  <div>
+
+    <script src="./scripts/initBoard.js"></script>
+    <script src="./scripts/gameLogic.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+
+}
+
+.start_area{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  height:500px;
+  width:500px;
+  background-image: url('../public/start.webp');
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+}
+h1{
+  color:#fff;
+
+}
+p{
+  color:#fff;
+}
+#game{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.game-mode-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      background-color: #f1f1f1;
+      border: 1px solid #ddd;
+      cursor: pointer;
+  }
+.game-mode-button input[type="radio"] {
+            display: none;
+  }
+.game-mode-button.active {
+    background-color: #059862;
+    color:#fff;
+}
+
+
+
+.btn{
+  margin-top:12px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    width:650px;
+    margin:auto;
+    box-shadow: 0 10px 10px #F6D553, 0 10px 20px #E47300;
+    border-radius: 15px;
+    position:
+}
+.box{
+  height:65px;
+  width:65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-container {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 80vmin;
+    height: 80vmin;
+    max-width: 650px;
+    max-height: 650px;
+    box-shadow: 0 10px 10px #F6D553, 0 10px 20px #E47300;
+    border-radius: 15px;
+    position: relative;
+}
+
+.snake {
+    position: absolute;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.snake_1 {
+  top: 12%;
+  left: 52%;
+}
+
+.snake_2 {
+  top: 55%;
+  left: 37%;
+}
+
+.snake_3 {
+  top: 48%;
+  left: 86%;
+}
+
+.snake_4 {
+  top: 0%;
+  left: 12%;
+}
+.ladder_1{
+  top: 71%;
+  transform: rotate(132deg);
+  left: 15%;
+  height: 220px;
+
+}
+.ladder_2{
+  left: 63%;
+  top: 36%;
+
+}
+.ladder_3{
+  left: 1%;
+  top: 25%;
+  transform: rotate(-29deg);
+  width: 121px;
+
+}
+.ladder_4{
+  left: 79%;
+  top: 3%;
+  transform: rotate(32deg);
+  width: 121px;
+
+}
+
+@media (max-width: 768px) {
+    .snake {
+        max-width: 30%;
+        max-height: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .snake {
+        max-width: 40%;
+        max-height: 40%;
+    }
+}
+
+/* playes */
+.players{
+
+}
+.player_1{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color:#fff;
+  left:-32px;
+  top:100%;
+}
+
+
+.player_2{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0000F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color:#fff;
+  top:106%;
+  left:-32px;
+}
+.button{
+
+}
+/* player section */
+.section_1{
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  width:25%;
+  text-align: center;
+
+}
+
+.section_2{
+  position: absolute;
+  top: 45%;
+  left: 1%;
+  width:25%;
+  text-align: center;
+
+}
+
+
+@keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .element-to-append {
+        animation: slideIn 0.5s ease forwards;
+    }
